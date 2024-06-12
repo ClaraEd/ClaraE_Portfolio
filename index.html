@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clara Edward Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "b5kEwaXGdOC7_Ityr",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Clara Edward</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Clara Edward</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-pic">
+        <img src="profile-pic.jpg" alt="Clara Edward" class="circular-image" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Clara Edward</h1>
+        <p class="section_text_p2">Software Developer</p>
+
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My Linkedin"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/clara-edward-a907b7213/', '_blank')"
+          />
+          <img
+            src="github.png"
+            alt="My GitHub"
+            class="icon"
+            onclick="window.open('https://github.com/ClaraEd', '_blank')"
+          />
+        </div>
+        <div id="socials-container1">
+          <img src="html.jpg" alt="" class="icon" />
+          <img src="css.jpg" alt="" class="icon" />
+          <img src="js.png" alt="" class="icon" />
+          <img src="python.jpg" alt="" class="icon" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="about-pic.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Frontend development intrigues me for its blend of creativity and
+              technical problem-solving. I excel at designing user interfaces
+              and optimizing frontend experiences, sparked by a Google UX design
+              course. At Year Up, I deepened my skills in HTML, CSS, and
+              JavaScript. I enjoy solving challenges and enhancing user
+              experiences, aspiring to become a frontend developer and UX
+              designer. My passion for creativity, commitment to accessibility,
+              and dedication to continuous learning drive me to create
+              innovative, user-friendly websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h1 class="title">Projects</h1>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="project-1.png" alt="Project 1 Image" class="project-img" />
+          <div class="project-info">
+            <h2 class="experience-sub-title project-title">Smoki' BBQ</h2>
+            <p class="project-description">
+              Welcome to Smoking BBQ! Our website, offers a seamless and
+              mouth-watering online experience. Discover our menu, learn about
+              our story, and easily make reservations. Dive into the world of
+              delicious BBQ through a user-friendly and visually appealing
+              interface.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ClaraEd/Mod2_JS_Final', '_blank')"
+              >
+                GitHub
+              </button>
+
+              <button
+                class="btn btn-color-3 project-btn"
+                onclick="window.open('https://claraed.github.io/Mod2_JS_Final/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project-2.png" alt="Project 2 Image" class="project-img" />
+          <div class="project-info">
+            <h2 class="experience-sub-title project-title">JS Quiz</h2>
+            <p class="project-description">
+              This project is a dynamic quiz application built using HTML, CSS,
+              and JavaScript. The quiz features a series of questions with
+              multiple-choice answers, allowing users to test their knowledge on
+              various topics. Challenege your friend or solve it with your
+              friends. Also have fun!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ClaraEd/Quiz', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-3 project-btn"
+                onclick="window.open('https://claraed.github.io/Quiz/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--third project-->
+        <div class="project-card">
+          <img src="hangman.png" alt="Project 2 Image" class="project-img" />
+          <div class="project-info">
+            <h2 class="experience-sub-title project-title">Movie Hangman</h2>
+            <p class="project-description">
+              This project is a classic fun and exciting Hangman game with a
+              twist—it's all about guessing movie names! Built using HTML, CSS,
+              and JavaScript, this game challenges players to guess the name of
+              a movie one letter at a time. Guess your favourite movies.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ClaraEd/HangmanProject', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-3 project-btn"
+                onclick="window.open('https://claraed.github.io/HangmanProject/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--fouth project-->
+        <div class="project-card">
+          <img src="tictactoe.png" alt="Project 2 Image" class="project-img" />
+          <div class="project-info">
+            <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+            <p class="project-description">
+              Welcome to Tic Tac Toe! This web-based game offers a seamless and
+              engaging experience for two players. You can play agains an AI to
+              challenge and test yourself. This is a classic Tic Tac Toe game
+              that we all love and enjoy built using HTML, CSS, and JavaScript.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ClaraEd/JS_TIC_TAC_TOE', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-3 project-btn"
+                onclick="window.open('https://claraed.github.io/JS_TIC_TAC_TOE/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--fift-->
+        <div class="project-card">
+          <img src="tipCal.png" alt="Project 2 Image" class="project-img" />
+          <div class="project-info">
+            <h2 class="experience-sub-title project-title">Tip Calculator</h2>
+            <p class="project-description">
+              Welcome to the Tip Calculator! This web-based application offers a
+              seamless and efficient way to calculate tips and split bills. Dive
+              into the world of hassle-free tipping and bill splitting with this
+              intuitive and visually appealing Tip Calculator. Enjoy a easy way
+              to calculate tip.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/ClaraEd/TipCalculator', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-3 project-btn"
+                onclick="window.open('https://claraed.github.io/TipCalculator/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project-card divs here for additional projects -->
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Feel free to ask anything!</h2>
+          <p>Email: hemaedward041@gmail.com</p>
+          <p>Location: New York City</p>
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="btn-container">
+            <button
+              type="submit"
+              class="btn btn-color-2"
+              onclick="senndMessage()"
+            >
+              Send Message
+            </button>
+          </div>
+          <p id="success-message" class="success-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Clara Edward</h2>
+          </div>
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/clara-edward-a907b7213/"
+              target="_blank"
+              class="footer-icon"
+              ><img src="linkedin.png" alt="LinkedIn"
+            /></a>
+            <a
+              href="https://github.com/ClaraEd"
+              target="_blank"
+              class="footer-icon"
+              ><img src="github.png" alt="GitHub"
+            /></a>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2024 Clara Edward. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="port.js"></script>
+  </body>
+</html>

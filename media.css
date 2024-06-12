@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .project-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the projects */
+  }
+
+  .project-card {
+    width: 100%; /* Make each project card full width on smaller screens */
+    margin: 1rem 0; /* Add margin to separate the projects */
+  }
+}
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .project-card {
+    flex: 0 0 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 8rem;
+    padding: 2rem;
+  }
+}
